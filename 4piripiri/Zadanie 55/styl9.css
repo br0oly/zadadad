@@ -1,0 +1,40 @@
+body{
+    font-family: Georgia;
+}
+#blok_lewy, #blok_prawy{
+    background-color: rgb(197 85 160);
+    text-align: center;
+    width: 50%;
+    height: 180px;
+    float: left;
+}
+#banner, #footer{
+    background-color: rgb(246 226 222);
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+    clear: both;
+}
+#glowny_lewy, #glowny_prawy{
+    background-color: rgb(197 85 160);
+    color: white;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+#blok_prawy > a{
+    background-image: url("cukierki1.png");
+    padding-right: 70px;
+    padding-bottom: 120px;
+    font-size: 150%;
+    text-decoration: none;
+}
+#glowny_lewy > table, td{
+    border: solid 2px blue;
+    margin: 20px;
+    padding: 10px;
+}
+h2{
+    letter-spacing: 10px;
+    font-size: 200%;
+}

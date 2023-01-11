@@ -1,0 +1,28 @@
+////////////////////////////////////////////////////////
+        kw1(1 opcja)
+SELECT tytul, rok, ocena
+FROM filmy, gatunki
+WHERE filmy.gatunki_id = gatunki_id
+AND filmy.gatunki_id = 5;
+
+///////////////////////////////////////////////////////
+        kw1(2 opcja)
+SELECT tytul, rok, ocena, rezyserzy.imie, rezyserzy.nazwisko
+FROM filmy, gatunki, rezyserzy
+WHERE filmy.gatunki_id = gatunki_id
+AND filmy.gatunki_id = rezyserzy.id
+AND gatunki.nazwa="komedia";
+
+//////////////////////////////////////////////////////
+       kw2
+SELECT tytul, filmy.id, rezyserzy.imie, rezyserzy.nazwisko
+FROM filmy, rezyserzy
+WHERE filmy.id = rezyserzy.id;
+
+//////////////////////////////////////////////////////
+
+    kw3
+SELECT filmy.id, filmy.tytul FROM filmy
+WHERE filmy.rok = 2017 AND filmy.ocena = 6;
+
+/////////////////////////////////////////////////////
